@@ -31,16 +31,16 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-slate-200 ">
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-violet-700 rounded-box w-52 text-white ">
             {links}
             </ul>
           </div>
           <Link
                     to='/'
-                    className="bg-gradient-to-r from-slate-200 via-blue-500 to-secondary bg-300% text-transparent bg-clip-text animate-gradient">DreamDwellings</Link>
+                    className="bg-gradient-to-r from-slate-200 via-blue-500 to-secondary bg-300% text-transparent bg-clip-text animate-gradient text-[20px] font-bold">DreamDwellings</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 text-slate-200 ">
+          <ul className="menu menu-horizontal px-1 text-slate-200 gap-6 ">
           {links}
           </ul>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 {
                     user ? <div className="dropdown dropdown-hover dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                            <div className="sm:w-5 md:8 lg:w-10 rounded-full">
+                            <div className=" rounded-full">
                                 <img src={user?.photoURL || "https://i.ibb.co/WsR6pb4/bu1.jpg"} />
                             </div>
                         </label>
