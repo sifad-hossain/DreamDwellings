@@ -71,7 +71,7 @@ const handleUpdateUserProfile = (name, image) => {
                    className="input input-bordered" />
 
                 </div>
-                <button onSubmit={handleUpdateUserProfile}>Updated</button>
+                <button className="btn btn-primary text-white text-lg" onSubmit={handleUpdateUserProfile}>Updated</button>
               </form>
          
             </div>

@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
        
-        <footer className="flex flex-col mt-16 border-t-2 justify-around gap-5 bg-indigo-500 py-8 text-black">
-            <nav className="text-lg text-black">
+        <footer className="flex flex-col mt-16 border-t-2 justify-around gap-5
+         bg-[#29157c] py-8 text-black">
+            <nav className="text-lg text-slate-300">
                 <ul className="flex h-full flex-wrap items-center justify-center gap-3">
-                    <li>
+                    <Link to='/'>
                         <a className="cursor-pointer hover:underline">Home</a>
-                    </li>
+                    </Link>
                     <li>
                         <a className="cursor-pointer hover:underline">Contact</a>
                     </li>
@@ -42,7 +44,7 @@ const Footer = () => {
                     </li>
                 </ul>
             </nav>
-            <aside className="text-center text-sm text-black">
+            <aside className="text-center text-sm text-slate-300">
                 <p>&copy; 2024 Homes.com. All Rights Reserved.</p>
             </aside>
         </footer>
