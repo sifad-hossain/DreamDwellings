@@ -41,7 +41,7 @@ const Profile = () => {
     <>
 
 
-      <div className='grid sm:grid-cols-1 lg:flex  w-[90%]  mx-auto'>
+      <div className='grid sm:grid-cols-1 lg:flex  w-[90%]  mx-auto pt-24'>
 
         <Helmet>
           <title>DreamDwellings - Updated Profile</title>

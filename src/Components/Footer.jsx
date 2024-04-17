@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
        
-        <footer className="flex flex-col mt-16 border-t-2 justify-around gap-5 bg-white py-8 text-black">
+        <footer className="flex flex-col mt-16 border-t-2 justify-around gap-5 bg-indigo-500 py-8 text-black">
             <nav className="text-lg text-black">
                 <ul className="flex h-full flex-wrap items-center justify-center gap-3">
                     <li>

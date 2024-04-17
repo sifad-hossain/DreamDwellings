@@ -19,7 +19,7 @@ const Blog = () => {
 
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 w-[90%] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 w-[90%] mx-auto pt-28">
 
             <Helmet>
                 <title>DreamDwellings - Blog</title>
@@ -30,7 +30,7 @@ const Blog = () => {
 
                     <div key={blogs.id} >
 
-                        <div className="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800">
+                        <div className="max-w-lg p-4 shadow-md dark:bg-gray-50 dark:text-gray-800 mb-6">
                             <div className="flex justify-between pb-4 border-bottom">
                                 <div className="flex items-center">
                                     <a rel="noopener noreferrer" href="#" className="mb-0 capitalize dark:text-gray-800">{blogs.time}</a>

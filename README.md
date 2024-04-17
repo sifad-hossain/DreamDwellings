@@ -1,8 +1,19 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Description:
+-------------
+Start with a brief introduction to DreamDwellings, highlighting its purpose and key features. Mention that it's a platform for buying, selling, and renting homes, emphasizing its user-friendly nature.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+.Advanced search functionality for finding properties based on specific criteria.
+.Secure payment processing for transactions.
+.User profiles for managing listings, favorites, and communication.
+.Integration with mapping services to visualize property locations.
+.Notifications for new listings or updates on saved searches.
+
+npm package:
+------------
+1. [AOS Package,](https://michalsnik.github.io/aos/)
+
+2. [React Hook form,](https://react-hook-form.com/)
+3.[ Swiper slider](https://swiperjs.com/)
