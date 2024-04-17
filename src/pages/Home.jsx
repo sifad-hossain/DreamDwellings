@@ -18,7 +18,7 @@ const Home = () => {
             </Helmet>
 
             <Slider></Slider>
-            <div className="grid grid-cols-3 mt-10 space-y-4">
+            <div className="grid grid-cols-1 sm:w-full lg:grid-cols-3 md:grid-cols-2 mt-10 space-y-4">
                 {
                     home?.map(homes => <HomeCard
                         key={homes.id}

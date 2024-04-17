@@ -7,7 +7,7 @@ const HomeCard = ({ home }) => {
     return (
         <div
 
-            className="mx-auto max-w-[430px] space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">
+            className="mx-auto  space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">
 
            
             <img src={image} alt="" />

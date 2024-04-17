@@ -27,6 +27,7 @@ const Homes = () => {
 
             <div className="w-[40%]  ">
                 <h1 className="text-xl font-bold text-neutral-700 uppercase">Product Name</h1>
+                
                 <h1 className="text-4xl font-bold text-neutral-900">{segment_name}</h1>
                 <h2 className="text-xl font-semibold text-gray-800 pt-4">{description}</h2>
 

@@ -13,7 +13,7 @@ const ProductCart = ({ products }) => {
     return (
         <div
 
-            className="mx-auto max-w-[430px] h-[550px] space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">
+            className="mx-auto  h-[550px] space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">
 
             <Helmet>
                 <title>DreamDwellings | Products</title>

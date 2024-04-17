@@ -13,9 +13,7 @@ const Navbar = () => {
             <NavLink
                 className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
                 to='/products'>product</NavLink>
-            <NavLink
-                className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
-                to='/about'>About</NavLink>
+          
             <NavLink
                 className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
                 to='/profile'>Updated Profile</NavLink>
@@ -26,35 +24,37 @@ const Navbar = () => {
         </>
 
     const { logout, user } = useAuth()
-
     return (
-
-        <nav className="flex items-center justify-between bg-violet-700 px-4 py-2 text-white">
-            <div className="scale-100 rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
-
-                <Link
+        <div className="navbar bg-violet-700">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-slate-200 ">
+            {links}
+            </ul>
+          </div>
+          <Link
                     to='/'
                     className="bg-gradient-to-r from-slate-200 via-blue-500 to-secondary bg-300% text-transparent bg-clip-text animate-gradient">DreamDwellings</Link>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal px-1 text-slate-200 ">
+          {links}
+          </ul>
+        </div>
 
 
-
-            </div>
-            <ul className="flex items-center justify-between gap-6 text-slate-200 font-semibold">
-
-                {links}
-
-
-            </ul>
-            <div className="">
-
+          <div className=" navbar-end">
                 {
-                    user ? <div className="dropdown dropdown-end">
+                    user ? <div className="dropdown dropdown-hover dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
+                            <div className="sm:w-5 md:8 lg:w-10 rounded-full">
                                 <img src={user?.photoURL || "https://i.ibb.co/WsR6pb4/bu1.jpg"} />
                             </div>
                         </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box w-52 bg-white ">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box bg-white ">
                             <li>
                                 <button className="btn btn-sm bg-violet-600  btn-ghost hover:bg-purple-600">{user?.displayName || 'user name not found'}</button>
 
@@ -73,8 +73,7 @@ const Navbar = () => {
                         </Link>
                 }
             </div>
-
-        </nav>
+      </div>
     );
 };
 
