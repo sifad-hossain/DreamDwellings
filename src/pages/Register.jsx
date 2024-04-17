@@ -26,8 +26,8 @@ const Register = () => {
             toast('password should be at least 6 characters or longer')
             return;
         }
-        else if (!/[A-Z]/.test(password)) {
-            toast('your password should have at least one upper case charaters')
+        else if (!/[a-z]| [A-Z]/.test(password) ) {
+            toast('your password should have at least one uppercase and lowercase charaters')
             return;
         }
 
