@@ -5,13 +5,13 @@ import { useParams } from "react-router-dom";
 const BlogDetails = () => {
 
 
-    const [products, setProducts] = useState('')
+    const [products, setProducts] = useState(null)
     const { id } = useParams()
     useEffect(() => {
         fetch('/blog.json')
             .then(res => res.json())
             .then(data => {                
-                const product = data.find(blog => blog?.id === id || {})
+                const product = data.find(blog => blog?.id === parseInt(id)) || {}
                 setProducts(product)
                 console.log(product);
                 console.log(data, id);

@@ -39,7 +39,7 @@ const Blog = () => {
                             </div>
                             <div className="space-y-4">
                                 <div className="space-y-2">
-                                    <img src="https://source.unsplash.com/random/480x360/?4" alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
+                                    <img src={blogs.image} alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
                                     <div className="flex items-center text-xs">
                                         <span>6 min ago</span>
                                     </div>

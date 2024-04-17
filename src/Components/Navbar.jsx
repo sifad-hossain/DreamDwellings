@@ -48,13 +48,13 @@ const Navbar = () => {
 
           <div className=" navbar-end">
                 {
-                    user ? <div className="dropdown dropdown-hover dropdown-end">
+                    user ? <div className="dropdown  dropdown-hover dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className=" rounded-full">
                                 <img src={user?.photoURL || "https://i.ibb.co/WsR6pb4/bu1.jpg"} />
                             </div>
                         </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2  rounded-box bg-white ">
+                        <ul tabIndex={0} className="menu dropdown-content mt-3 z-[1] p-2  rounded-box bg-white ">
                             <li>
                                 <button className="btn btn-sm bg-violet-600  btn-ghost hover:bg-purple-600">{user?.displayName || 'user name not found'}</button>
 
