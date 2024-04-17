@@ -17,7 +17,7 @@ const ProductCarts = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 pt-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 pt-28">
 
             {
                 product.map(products =>

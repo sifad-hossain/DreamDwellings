@@ -19,7 +19,7 @@ const Homes = () => {
     console.log(product);
 
     return (
-        <div className="w-[90%]  grid sm:grid-row-1 grid-cols-2 mx-auto mt-16 mb-10 space-x-4 ">
+        <div className="w-[90%]  grid sm:grid-row-1 grid-cols-2 mx-auto pt-28 mb-10 space-x-4 ">
             
             <Helmet>
                 <title>DreamDwellings - Products Details{id}</title>
