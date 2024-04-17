@@ -46,7 +46,11 @@ const Login = () => {
                     <label htmlFor="email" className="block ">
                         email
                     </label>
-                    <input type="text" name="email" placeholder="email" className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring  "
+                    <input
+                     type="text"
+                      name="email"
+                       placeholder="email" 
+                       className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring "
                         {...register("email", { required: true })}
                     />
                     {errors.email && toast('wow so easy')}
