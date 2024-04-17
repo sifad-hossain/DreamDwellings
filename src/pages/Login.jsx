@@ -64,18 +64,14 @@ const Login = () => {
                         {...register("password", { required: true })}
                     />
                     <span onClick={() => setShowPassword(!showPassword)}>
-                        {
-                            showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
-                        }
+                    {
+                        showPassword ? <FaEyeSlash className="mx-[360px] -mt-8"></FaEyeSlash> : <FaEye className="mx-[360px] -mt-8"></FaEye>
+                       }
 
                     </span>
 
                     {errors.password && toast('wow so easy')}
-                    <div className="flex justify-end text-xs ">
-                        <a href="#" className="hover:underline">
-                            Forgot Password?
-                        </a>
-                    </div>
+                   
                 </div>
                 {/* Sign in Button */}
                 <button className="text-lg rounded-xl relative p-[10px] block w-full bg-indigo-600 text-white border-y-4 duration-500 overflow-hidden focus:border-indigo-500 z-50 group">

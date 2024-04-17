@@ -26,7 +26,7 @@ const Register = () => {
             toast('password should be at least 6 characters or longer')
             return;
         }
-        else if (!/[a-z]| [A-Z]/.test(password) ) {
+        else if (!/[a-z] && [A-Z]/.test(password) ) {
             toast('your password should have at least one uppercase and lowercase charaters')
             return;
         }
@@ -97,14 +97,15 @@ const Register = () => {
                         placeholder="Password"
                         className="w-full px-4 py-3 rounded-md border border-indigo-300 focus:outline-none focus:ring"
                         {...register("password", { required: true })}
+                        
                     />
-                    <span onClick={ () => setShowPassword (!showPassword)}>
+                   
+                   <span  onClick={ () => setShowPassword (!showPassword)}>
                        {
-                        showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                        showPassword ? <FaEyeSlash className="mx-[360px] -mt-8"></FaEyeSlash> : <FaEye className="mx-[360px] -mt-8"></FaEye>
                        }
                         
-                        </span>
-
+                        </span>  
                     {errors.password && toast('plz your password')}
 
 
