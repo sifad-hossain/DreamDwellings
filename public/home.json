@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://i.ibb.co/BTnZD7g/pikaso-texttoimage-a-beautiful-home-design-with-4-flour-1.jpg",
+    "estate_title": "Luxury Villa with Ocean View",
+    "id": "1",
+    "segment_name": "Luxury",
+    "description": "A stunning villa overlooking the ocean, featuring spacious rooms, private pool, and landscaped gardens.",
+    "price": "$1,500,000",
+    "status": "sale",
+    "area": "5000 sq ft",
+    "location": "Malibu, California",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "kitchen"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/mRK93g4/pikaso-texttoimage-a-beautiful-home-design-5.jpg",
+    "estate_title": "Modern Apartment in Downtown",
+    "id": "2",
+    "segment_name": "Urban",
+    "description": "Contemporary apartment located in the heart of the city, close to amenities and public transportation.",
+    "price": "$3,000",
+    "status": "rent",
+    "area": "1200 sq ft",
+    "location": "New York City, New York",
+    "facilities": [
+      "living room",
+      "gym",
+      "parking"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Ytk3L1f/pikaso-texttoimage-a-beautiful-home-design-2.jpg",
+    "estate_title": "Cozy Cottage in the Woods",
+    "id": "3",
+    "segment_name": "Rural",
+    "description": "Charming cottage nestled in a serene forest setting, perfect for nature lovers seeking tranquility.",
+    "price": "$350,000",
+    "status": "sale",
+    "area": "1500 sq ft",
+    "location": "Asheville, North Carolina",
+    "facilities": [
+      "living room",
+      "fireplace",
+      "garden"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/89KB18h/pikaso-texttoimage-a-beautiful-home-design-1.jpg",
+    "estate_title": "Historic Brownstone in Brooklyn",
+    "id": "4",
+    "segment_name": "Heritage",
+    "description": "Elegant brownstone townhouse steeped in history, featuring original architectural details and modern amenities.",
+    "price": "$2,200,000",
+    "status": "sale",
+    "area": "2800 sq ft",
+    "location": "Brooklyn, New York",
+    "facilities": [
+      "living room",
+      "study",
+      "roof terrace"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/WfsFjm7/pikaso-texttoimage-a-beautiful-home-design.jpg",
+    "estate_title": "Contemporary Loft with City Views",
+    "id": "5",
+    "segment_name": "Urban",
+    "description": "Spacious loft apartment with floor-to-ceiling windows offering panoramic views of the city skyline.",
+    "price": "$4,500",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "San Francisco, California",
+    "facilities": [
+      "living room",
+      "balcony",
+      "fitness center"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/XjV103g/pikaso-texttoimage-pikaso-1.jpgs",
+    "estate_title": "Seaside Bungalow Escape",
+    "id": "6",
+    "segment_name": "Seaside",
+    "description": "Quaint bungalow steps away from the beach, offering a peaceful retreat for relaxation and recreation.",
+    "price": "$800,000",
+    "status": "sale",
+    "area": "1000 sq ft",
+    "location": "Santa Barbara, California",
+    "facilities": [
+      "living room",
+      "deck",
+      "barbecue area"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/5j4H0cH/pikaso-reimagine-digital-painting-Modern-twostory-house-with-a-flat-2.jpg",
+    "estate_title": "Mountain View Retreat",
+    "id": "7",
+    "segment_name": "Mountain",
+    "description": "Spectacular mountain retreat featuring cozy cabins, hiking trails, and breathtaking views.",
+    "price": "$600/night",
+    "status": "rent",
+    "area": "Varies",
+    "location": "Aspen, Colorado",
+    "facilities": [
+      "living room",
+      "hot tub",
+      "fire pit"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/19KzFzW/pikaso-reimagine-digital-painting-Modern-twostory-house-with-a-flat-1.jpg",
+    "estate_title": "Riverside Mansion",
+    "id": "8",
+    "segment_name": "Luxury",
+    "description": "Grand mansion overlooking the river, with luxurious amenities and beautifully landscaped grounds.",
+    "price": "$5,000,000",
+    "status": "sale",
+    "area": "8000 sq ft",
+    "location": "Savannah, Georgia",
+    "facilities": [
+      "living room",
+      "swimming pool",
+      "tennis court"
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/80mTd0J/pikaso-reimagine-digital-painting-Modern-twostory-house-with-a-flat.jpg",
+    "estate_title": "Ski-In/Ski-Out Chalet",
+    "id": "9",
+    "segment_name": "Mountain",
+    "description": "Charming ski-in/ski-out chalet perfect for winter sports enthusiasts, with cozy interiors and mountain views.",
+    "price": "$1,200,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "Whistler, British Columbia",
+    "facilities": [
+      "living room",
+      "ski storage",
+      "fireplace"
+    ]
+  }
+]
