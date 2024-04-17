@@ -11,7 +11,7 @@ const SocialLogin = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const from = location?.state
-
+console.log(from);
 
     const handleSocialLogin = socialProvider => {
         socialProvider()

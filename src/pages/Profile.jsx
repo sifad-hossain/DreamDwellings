@@ -15,27 +15,23 @@ const Profile = () => {
   console.log(user);
 
 
-  const auth = getAuth()
-  // const handleUpdatedUser = () => {
-  //   updateUserProfile(auth.user, {
-  //     displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
-  //   })
-  //     .then((result) => {
-  //       setUser({ ...user, displayName: name, photoURL: photoURL })
-  //     })
-  // }
-
-   //updated user profile
-   const handleUpdateUserProfile = (name, image) => {
-      updateUserProfile(auth.currentUser, {
-          displayName: name,
-          photoURL: image
-      })
-      .then((result) => {
-        setUser({ ...user, displayName: name, photoURL: image })
-      })
-     
+//updated user profile
+const handleUpdateUserProfile = (name, image) => {
+  updateUserProfile( name, image)
+  .then((result) => {
+    setUser({ ...user, displayName: name, photoURL: image })
+  })
+ 
+}
+  const handleupdated = e => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const photoURL = e.target.photoURL.value;
+    console.log(name, photoURL);
+    handleUpdateUserProfile(name, photoURL)
   }
+
+   
 
   return (
     <>
@@ -53,23 +49,31 @@ const Profile = () => {
 
             </div>
             <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <form className="card-body">
+              <form onSubmit={handleupdated} className="card-body">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">{name}</span>
+                    <span className="label-text">name</span>
                   </label>
-                  <input type="text" placeholder="name" className="input input-bordered" />
+                  <input
+                   type="text"
+                    placeholder="name" 
+                    className="input input-bordered"
+                    name="name" />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    {/* <span className="label-text">{image}</span> */}
+                    <span className="label-text">image</span>
                   </label>
-                  <input type="text" placeholder="PhotoURL" className="input input-bordered" />
+                  <input
+                   type="text" 
+                   placeholder="PhotoURL" 
+                   name="photoURL"
+                   className="input input-bordered" />
 
                 </div>
-
+                <button onSubmit={handleUpdateUserProfile}>Updated</button>
               </form>
-              <button onClick={handleUpdateUserProfile}>Updated</button>
+         
             </div>
           </div>
         </div>
