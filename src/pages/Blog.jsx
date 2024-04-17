@@ -1,4 +1,3 @@
-import { key } from "localforage";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
@@ -9,22 +8,18 @@ const Blog = () => {
 
     const [blog, setBlog] = useState([])
 
-    // const { feature } = blog;
-
     useEffect(() => {
         fetch('/blog.json')
             .then(res => res.json())
             .then(data => {
-
-                setBlog(data)
-                console.log(data);
+                setBlog(data)                
             })
     }, []);
 
 
 
     return (
-        <div className="grid grid-cols-3 w-[90%] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 w-[90%] mx-auto">
 
             <Helmet>
                 <title>DreamDwellings - Blog</title>

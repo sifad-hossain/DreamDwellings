@@ -19,13 +19,13 @@ const Homes = () => {
     console.log(product);
 
     return (
-        <div className="w-full  flex mx-auto mt-16 mb-10 space-x-4 ml-36">
+        <div className="w-[90%]  grid sm:grid-row-1 grid-cols-2 mx-auto mt-16 mb-10 space-x-4 ">
             
             <Helmet>
                 <title>DreamDwellings - Products Details{id}</title>
             </Helmet>
 
-            <div className="w-[40%]  ">
+            <div className="  grid-cols-1">
                 <h1 className="text-xl font-bold text-neutral-700 uppercase">Product Name</h1>
                 
                 <h1 className="text-4xl font-bold text-neutral-900">{segment_name}</h1>
@@ -61,8 +61,8 @@ const Homes = () => {
 
 
 
-            <div className="w-[40%]   ">
-            <img src={image} alt="" />
+            <div className="  grid-cols-2 ">
+            <img className="w-[90%]" src={image} alt="" />
             </div>
         </div>
     );

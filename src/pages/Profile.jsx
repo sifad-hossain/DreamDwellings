@@ -41,12 +41,12 @@ const Profile = () => {
     <>
 
 
-      <div className='flex w-[90%] mx-auto'>
+      <div className='grid sm:grid-cols-1 lg:flex  w-[90%]  mx-auto'>
 
         <Helmet>
           <title>DreamDwellings - Updated Profile</title>
         </Helmet>
-        <div className="hero  bg-base-200 w-[45%] mt-10">
+        <div className="hero  bg-base-200 w-full lg:w-[45%] mt-10">
           <div className="hero-content flex-col ">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl font-bold">Updated Profile</h1>
@@ -78,8 +78,8 @@ const Profile = () => {
 
 
 
-        <div className="flex w-[45%] mx-auto mt-10 h-[400px] bg-gray-100 rounded-2xl  space-x-3 ">
-          <div className=" w-[50%]  mt-10 ">
+        <div className="flex w-full lg:w-[45%] mx-auto mt-10 h-[400px] bg-gray-100 rounded-2xl  space-x-3 ">
+          <div className="w-[40%] lg:w-[50%] mt-28 lg:mt-10 ">
             <img
               data-aos="zoom-in"
 
@@ -88,7 +88,7 @@ const Profile = () => {
               src="https://i.ibb.co/3vX30HD/383056171-1486227435462946-2572785117919897583-n.jpg" alt="" />
           </div>
 
-          <div className=" w-[50%]  mt-20 px-4">
+          <div className="sm:w-[60%] lg:w-[50%]  mt-20 px-4">
 
             <p
               data-aos="fade-left"

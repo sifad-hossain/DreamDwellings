@@ -1,15 +1,12 @@
-
 import { Link } from "react-router-dom";
+
 
 
 const HomeCard = ({ home }) => {
     const { estate_title, segment_name, image, price, id } = home;
     return (
         <div
-
-            className="mx-auto  space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">
-
-           
+            className="mx-auto  space-y-4 rounded-lg bg-white p-4 shadow-lg md:w-[430px] border border-pink-400 hover:shadow-pink-300  duration-300 transition-all hover:scale-105">           
             <img src={image} alt="" />
             <div className="grid gap-2 ">
                 <h1 className="text-xl font-semibold ">{segment_name}</h1>
