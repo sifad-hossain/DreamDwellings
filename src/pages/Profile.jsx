@@ -86,14 +86,12 @@ const handleUpdateUserProfile = (name, image) => {
           <div className="w-[40%] lg:w-[50%] mt-28 lg:mt-10 ">
             <img
               data-aos="zoom-in"
-
               data-aos-duration="1000"
               className="rounded-full"
               src="https://i.ibb.co/3vX30HD/383056171-1486227435462946-2572785117919897583-n.jpg" alt="" />
           </div>
 
           <div className="sm:w-[60%] lg:w-[50%]  mt-20 px-4">
-
             <p
               data-aos="fade-left"
               data-aos-delay="1000"
@@ -125,8 +123,6 @@ const handleUpdateUserProfile = (name, image) => {
                 data-aos-delay="2400"
                 className=" flex gap-2 text-black"><AiFillHome />Rupganj, Narayngonj</p>
             </div>
-
-
             <ul className=" flex h-full mt-10  gap-5">
               <li
                 data-aos="fade-up"
@@ -159,31 +155,9 @@ const handleUpdateUserProfile = (name, image) => {
                 </a>
               </li>
             </ul>
-
-
-
-
-
-
-
           </div>
-
-
         </div>
-
-
-
-
-
       </div>
-
-
-
-
-
-
-
-
     </>
   );
 };

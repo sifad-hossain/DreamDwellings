@@ -65,19 +65,17 @@ const Homes = () => {
             </div>
 
 
-
-            {/* image, estate_title, segment_name, description, price, status, area, location, facilities  */}
             <div className=" lg:hidden pt-16 w-full">
                 <div className="card  bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
                         <img src={image} alt="Shoes" className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">{segment_name}</h2>
-                        <p>{estate_title}</p>
-                        <p>{description}</p>
+                        <h2 className="card-title"><span className="text-lg font-semibold ">Product Name:</span> {segment_name}</h2>
+                        <p className="text-xl font-medium">Title: {estate_title}</p>
+                        <p className="text-base font-medium">{description}</p>
                         <div>
-                            <p className="text-lg font-bold mt-4">Facilities: <span className="text-lg text-black break- font-medium ">{facilities}</span></p>
+                            <p className="text-lg font-semibold mt-4">Facilities: <span className="text-base text-black break- font-medium ">{facilities}</span></p>
                         </div>
 
                         <div className="w-full">

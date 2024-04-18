@@ -43,28 +43,3 @@ body {
 }
 
 
-.slide-1 {
-  background-image: 'url(https://i.ibb.co/WsR6pb4/bu1.jpg)';
-}
-
-.slide-2 {
-  background-image: 'url(https://i.ibb.co/c371RnW/bu2.jpg)';
-}
-
-.slide-3 {
-  background-image: 'url(https://i.ibb.co/xYWtqjw/bu3.jpg)';
-}
-
-.slide-4 {
-  background-image: 'url(https://i.ibb.co/WsjFvTr/bu4.jpg)';
-}
-
-.slide-5 {
-  background-image: 'url(https://i.ibb.co/RPJdVQg/bu5.jpg)';
-}
-
-/* .className="hero h-[250px] lg:min-h-[calc(100vh-150px)] " */
-
-/* . style={{
-  backgroundImage: 'url(https://i.ibb.co/RPJdVQg/bu5.jpg)',
-}} */
