@@ -27,8 +27,12 @@ const Register = () => {
             return;
         }
         // else if (!/[a-z] && [A-Z]/.test(password) ) {
-        else if (!/^(?=.*[A-Z])(?=.*[a-z]).{6,}$/.test(password) ) {
-            toast('your password should have at least one uppercase and lowercase charaters')
+        else if (!/[A-Z]/.test(password) ) {
+            toast('your password should have at least one uppercase  charaters')
+            return;
+        }
+        else if (!/[a-z]/.test(password) ) {
+            toast('your password should have at least one lowercase charaters')
             return;
         }
 

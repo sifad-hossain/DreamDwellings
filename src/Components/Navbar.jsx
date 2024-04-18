@@ -5,14 +5,19 @@ import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
 
+
+
     const links =
         <>
             <NavLink
                 className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
                 to='/'>Home</NavLink>
+         
+            
             <NavLink
-                className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
-                to='/products'>product</NavLink>
+            className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
+            to='/products'>product</NavLink>
+         
           
             <NavLink
                 className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
@@ -24,7 +29,10 @@ const Navbar = () => {
         </>
 
     const { logout, user } = useAuth()
+
     return (
+
+        
         <div className="navbar bg-violet-700 shadow-lg fixed z-10">
         <div className="navbar-start">
           <div className="dropdown dropdown-hover">
