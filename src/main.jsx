@@ -8,22 +8,21 @@ import "./index.css";
 import Root from "./Root";
 import Login from "./pages/Login";
 import NotFound from "./Components/NotFound";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import About from "./pages/about/About";
 
 import Register from "./pages/Register";
 import AuthProvider from "./AuthProvider/AuthProvider";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import PrivateRoute from "./Components/PrivateRoute";
+import PrivateRoute from "./routes/PrivateRoute";
 import Homes from "./pages/Homes";
-
-import Blog from "./pages/Blog";
-import ProductCarts from "./pages/ProductCarts";
-import BlogDetails from "./pages/BlogDetails";
-import Profile from "./pages/Profile";
+import Profile from "./Components/Profile";
 import { HelmetProvider } from "react-helmet-async";
 import AddProduct from "./pages/product/addProduct/AddProduct";
+import Home from "./pages/home/home/Home";
+import ProductCarts from "./pages/productCart/ProductCarts";
+import Blog from "./pages/blog/Blog";
+import BlogDetails from "./pages/blog/BlogDetails";
 
 
 const router = createBrowserRouter([

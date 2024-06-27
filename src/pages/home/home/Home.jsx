@@ -1,14 +1,12 @@
-import Slider from "./slider/Slider";
-import HomeCard from "./HomeCard";
 import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from "react";
+import HomeCard from "./HomeCard";
+import Slider from "../slider/Slider";
 
 
 
 const Home = () => {
 
-    // const home = useLoaderData() || []
-    // console.log(home);
     const [item, setItem] = useState()
     useEffect( () => {
         fetch(`${import.meta.env.VITE_API_URL}/products`)
