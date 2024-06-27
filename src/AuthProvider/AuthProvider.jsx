@@ -29,8 +29,7 @@ const AuthProvider = ({ children }) => {
       return  updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: image
-        })
-       
+        })       
     }
 
 
@@ -62,8 +61,7 @@ const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
-                setUser(user);
-                
+                setUser(user);                
             }
             setLoading(false);
         });
@@ -89,5 +87,7 @@ const AuthProvider = ({ children }) => {
         </AuthContext.Provider>
     );
 };
+
+
 
 export default AuthProvider;

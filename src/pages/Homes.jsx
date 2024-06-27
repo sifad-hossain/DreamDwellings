@@ -55,7 +55,9 @@ const Homes = () => {
 
                     <div className="flex justify-between items-center border-t border-gray-300 py-2">
                         <span className=" title-font font-medium text-2xl text-gray-900">{price}</span>
-                        <button className="btn btn-primary rounded-sm text-white transition-all duration-300 hover:bg-secondary hover:border-secondary">Buy Now</button></div>
+                        <button className="btn btn-primary rounded-sm text-white transition-all duration-300 hover:bg-secondary hover:border-secondary">Buy Now</button>
+                        <button className="btn btn-info rounded-sm text-white transition-all duration-300 hover:bg-secondary hover:border-secondary">Add to cart</button>
+                        </div>
 
                 </div>
 

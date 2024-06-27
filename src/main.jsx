@@ -23,6 +23,7 @@ import ProductCarts from "./pages/ProductCarts";
 import BlogDetails from "./pages/BlogDetails";
 import Profile from "./pages/Profile";
 import { HelmetProvider } from "react-helmet-async";
+import AddProduct from "./pages/product/addProduct/AddProduct";
 
 
 const router = createBrowserRouter([
@@ -33,8 +34,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>,
-        loader: () => fetch('/home.json')
+        element: <Home></Home>
       },
       {
         path: '/home/:id',
@@ -63,6 +63,10 @@ const router = createBrowserRouter([
         </PrivateRoute>
       },
       {
+        path: '/addProduct',
+        element:<AddProduct></AddProduct>
+      },
+      {
         path: 'register',
         element: <Register></Register>
       },
@@ -86,12 +90,12 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
 
-  <HelmetProvider>
+    <HelmetProvider>
 
-    <AuthProvider>
-      <RouterProvider router={router} />
-      <ToastContainer />
-    </AuthProvider>
+      <AuthProvider>
+        <RouterProvider router={router} />
+        <ToastContainer />
+      </AuthProvider>
     </HelmetProvider>
   </React.StrictMode>
 ); 

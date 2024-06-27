@@ -20,7 +20,7 @@ const Login = () => {
 
 
     //navigate after login
-    navigate(location?.state ? location.state : '/')
+   
 
 
     const onSubmit = data => {
@@ -30,7 +30,7 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 if (result.user) {
-                    navigate(from)
+                    navigate(location?.state ? location.state : '/')
                 }
 
             });

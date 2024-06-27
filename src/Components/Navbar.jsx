@@ -17,6 +17,9 @@ const Navbar = () => {
             <NavLink
             className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
             to='/products'>product</NavLink>
+            <NavLink
+            className={({ isActive }) => isActive ? 'text-secondary text-[17px] hover:shadow-lg shadow-gray-50  font-bold' : 'font-bold'}
+            to='/addProduct'>AddProduct</NavLink>
          
           
             <NavLink
