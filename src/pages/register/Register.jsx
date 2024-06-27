@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
-import { AuthContext } from "../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import SocialLogin from "./SocialLogin";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import SocialLogin from "../../Components/SocialLogin";
 const Register = () => {
 
     const [registerError, setRegisterError] = useState('');

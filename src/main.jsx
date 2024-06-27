@@ -5,10 +5,10 @@ import {
 } from "react-router-dom";
 import {router} from "./routes/Router"
 import "./index.css";
-import AuthProvider from "./AuthProvider/AuthProvider";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { HelmetProvider } from "react-helmet-async";
+import AuthProvider from "./AuthProvider/AuthProvider";
 
 
 
