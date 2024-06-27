@@ -1,13 +1,12 @@
+/* eslint-disable no-unused-vars */
 
 import { AiFillHome } from "react-icons/ai";
 import { CiMail } from "react-icons/ci";
 import { FaPhone } from "react-icons/fa6";
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Helmet } from "react-helmet-async";
 import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
-import { getAuth } from "firebase/auth";
 
 const Profile = () => {
 
